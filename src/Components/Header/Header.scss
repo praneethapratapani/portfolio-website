@@ -1,0 +1,105 @@
+.navbar {
+    position: fixed;           /* Fixes navbar to the top of the viewport */
+    top: 0;                    /* Positions it at the top */
+    left: 0;
+    width: 100%;               /* Spans the full width of the viewport */
+    height: 70px;              /* Set the height of the navbar */
+    background-color: #FFFFFF;    /* Background color */
+    color: #006D6A;              /* Text color */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;             /* Keeps it above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Spreads out the logo and links */
+  align-items: center; /* Vertically centers the items */
+  padding: 0 20px; /* Adds horizontal padding */
+  width: 95%;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  font-size: 1.8em; /* Larger text for the logo */
+  color: #006D6A; 
+  font-weight: bold;
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-logo:hover {
+  color: #FFB300; /* Golden Yellow on hover */
+}
+
+/* Navbar Links Container */
+.navbar-links {
+  list-style: none; /* Removes list bullets */
+  display: flex; /* Makes the links appear in a row */
+  gap: 20px; /* Adds space between links */
+}
+
+/* Navbar Link Styling */
+.navbar-links li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #006D6A; /* White text for links */
+  font-size: 1.1em; /* Slightly larger text for readability */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-links li a:hover {
+  color: #FFB300; /* Golden Yellow for hover effect */
+}
+
+/* Icons Section */
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.navbar-icons a {
+  text-decoration: none;
+}
+
+.navbar-icons img {
+  width: 26px;
+  height: 25px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-icons img:hover {
+  transform: scale(1.2); /* Slightly enlarge the icons on hover */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Stacks the navbar content */
+    align-items: flex-start; /* Aligns the items to the left */
+  }
+
+  .navbar-links {
+    margin-top: 20px;
+    flex-direction: column; /* Stacks the links vertically */
+    gap: 10px; /* Adds space between the links */
+  }
+
+  .navbar-links li a {
+    font-size: 1.3em; /* Increases font size for readability on small screens */
+  }
+  .navbar-icons {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .navbar-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}

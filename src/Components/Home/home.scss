@@ -1,7 +1,7 @@
 @import "../../global.scss";
 //.home
 //{
-    page1 {
+    .page1 {
         height:95%;
     }
     
@@ -16,6 +16,7 @@
         width: 100%;
         border: none !important;
         /* z-index: 999; */
+        background: linear-gradient(to right, #FFF8E1 0%, #006D6A 100%);
     }
 
     .about{

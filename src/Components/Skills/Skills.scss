@@ -1,0 +1,74 @@
+.page3Class{
+        background-color: #B8E4E0;
+//         height: 102% !important;
+}
+
+.mainHeading{
+    margin:0px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.skillHeading{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.skillsSection{
+    margin:20px;
+    overflow-y: scroll;
+    max-height: 550px;
+}
+  
+  
+.skills-container {
+    display: flex;
+  flex-direction: column; /* Ensure skills stack vertically */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+
+  .skills-list {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures icons wrap to the next line when there's no space */
+  gap: 15px;  /* Adds spacing between items */
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+  
+  .skill-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for each box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-box img {
+    width: 24px; /* Set icon size */
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .skill-box span {
+    font-size: 0.9rem; /* Adjust text size */
+    font-weight: 500; /* Slightly bold */
+  }
+  
+  .skill-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  

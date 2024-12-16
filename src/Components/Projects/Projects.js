@@ -22,6 +22,7 @@ const Projects = () => {
   ];
 
   return (
+    <div className='page2Class page2'>
     <div className="cardsBody">
     <div className="cardsContainer">
       <div className="row h-100">
@@ -31,6 +32,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
     </div>
   );

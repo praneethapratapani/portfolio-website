@@ -11,6 +11,7 @@ function FlipCard({ card }) {
     }
   }
     return (
+      <section id="projects">
       <div
       className="flip-card-outer"
       onClick={handleClick} 
@@ -35,6 +36,7 @@ function FlipCard({ card }) {
           </div>
         </div>
       </div>
+      </section>
     );
   }
   
