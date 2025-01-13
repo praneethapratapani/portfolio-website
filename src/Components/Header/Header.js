@@ -13,13 +13,13 @@ function Header({menuOpen}) {
           </ul>
           <div className="navbar-icons">
             <a href="mailto:pratapanipraneetha@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img src="assets/gmail.png" alt="Gmail" />
+              <img src={`${process.env.PUBLIC_URL}/assets/gmail.png`} alt="Gmail" />
             </a>
             <a href="https://github.com/praneethapratapani" target="_blank" rel="noopener noreferrer">
-              <img src="assets/github.png" alt="GitHub" />
+              <img src={`${process.env.PUBLIC_URL}/assets/github.png`} alt="GitHub" />
             </a>
             <a href="https://www.linkedin.com/in/praneethapratapani" target="_blank" rel="noopener noreferrer">
-              <img src="assets/linkedin.png" alt="LinkedIn" />
+              <img src={`${process.env.PUBLIC_URL}/assets/linkedin.png`} alt="LinkedIn" />
             </a>
           </div>
         </div>

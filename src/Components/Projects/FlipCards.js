@@ -26,6 +26,8 @@ function FlipCard({ card }) {
           <div className="card front">
             <div className="card-body">
               <p className="card-text">{card.title}</p>
+              <img className="project-image"src={`${process.env.PUBLIC_URL}${card.icon}`} alt={card.name} />
+              <p className="text-bottom-front">{card.description}</p>
             </div>
           </div>
           <div className="card back">

@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
                 <div className="right">
                     <div className="top">
-                        <img src="assets/lp.png" alt=""  className="img-fluid animated" />
+                        <img src={`${process.env.PUBLIC_URL}/assets/lp.png`} alt=""  className="img-fluid animated" />
                         <div className='heading2'><span ref={textRef}></span></div> 
                     </div>
                 </div>
