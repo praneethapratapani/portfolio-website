@@ -66,10 +66,11 @@ const Skills = () => {
   return (
     
     <div id="skills" className='page3Class'>
-    <div className='mainHeading'>I have experience with these technologies</div>
+    <div className='mainHeading'>Skills & Technologies</div>
+    <p className="subHeading">Technologies I’ve worked with throughout my projects</p>
     <div className='skillsSection'>
       {skillsData.map((section, index) => (
-        <div key={index} className="skills-container">
+        <div key={index} className="skills-container fade-in">
           <div className='skillHeading'>{section.category}</div>
           <div className="skills-list">
             {section.skills.map((skill, idx) => (

@@ -10,6 +10,7 @@ const Projects = () => {
       description: 'An innovative app designed to simplify healthcare access',
       link: 'https://github.com/praneethapratapani/DocConnect',
       icon: "/assets/docConnect.png",
+      techStack: 'MySQL • Java',
       variant: "click"
     },
     {
@@ -18,6 +19,7 @@ const Projects = () => {
       description: 'A robust system designed to manage products, customers, orders, reviews, and promotions for a Sephora store',
       link: 'https://github.com/yourusername/project2',
       icon: "/assets/Sephora.png",
+      techStack: 'MySQL',
       variant: "click"
     },
     // Add more projects as needed

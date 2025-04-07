@@ -27,13 +27,18 @@ function FlipCard({ card }) {
             <div className="card-body">
               <p className="card-text">{card.title}</p>
               <img className="project-image"src={`${process.env.PUBLIC_URL}${card.icon}`} alt={card.name} />
-              <p className="text-bottom-front">{card.description}</p>
+              <div className="tech-stack">{card.techStack}</div>
             </div>
           </div>
           <div className="card back">
             <div className="card-body">
               <p className={cn('card-text', 'text-container')}>{card.description}</p>
-              <p className="text-bottom">{card.link}</p>
+              <div className="btn-group">
+                <a href={card.link} target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+                {card.live && (
+                  <a href={card.live} target="_blank" rel="noopener noreferrer" className="btn btn-live">Live</a>
+                )}
+              </div>
             </div>
           </div>
         </div>
